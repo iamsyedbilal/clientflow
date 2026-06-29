@@ -3,7 +3,7 @@ import HeroButtons from "./HeroButtons";
 
 export default function HeroContent() {
   return (
-    <div className="mx-auto flex max-w-4xl flex-col items-center justify-center py-20 text-center">
+    <div className="mx-auto flex max-w-4xl flex-col items-center justify-center py-12 text-center">
       {/* Badge */}
       <div className="mb-2 inline-flex items-center rounded-full border border-primary/15 bg-primary/5 px-4 py-1 text-sm font-medium text-primary backdrop-blur-sm">
         AI-powered platform for service businesses
@@ -11,9 +11,9 @@ export default function HeroContent() {
 
       {/* Heading */}
       <h1 className="max-w-5xl text-5xl font-bold leading-tight tracking-tight text-foreground lg:text-7xl">
-        Run your clients, projects
-        <br />
-        and billing <span className="text-primary">in one place.</span>
+        Run your entire freelance business
+        {/* <br /> */}
+        <span className="text-primary"> in one place.</span>
       </h1>
 
       {/* Description */}
