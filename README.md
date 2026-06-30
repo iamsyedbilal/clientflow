@@ -1,36 +1,214 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 ClientFlow
 
-## Getting Started
+A modern SaaS platform for freelancers and agencies to manage clients, projects, invoices, analytics, automation, and client portals—all in one place.
 
-First, run the development server:
+> **Status:** 🚧 Currently under active development.
+
+---
+
+## 📸 Preview
+
+> Landing page preview coming soon.
+
+<!-- Add screenshot or GIF here -->
+
+<!--
+![ClientFlow Preview](./public/preview.png)
+-->
+
+---
+
+## ✨ Features
+
+### 🧑‍💼 Client CRM
+- Manage clients in one place
+- Client profiles & contact information
+- Search and filter clients
+- Linked projects and invoices
+
+### 📋 Project Management
+- Kanban board workflow
+- Task prioritization
+- Due dates
+- Project tracking
+
+### 💳 Invoicing
+- Professional invoice layout
+- Payment summaries
+- Invoice management
+- Payment status tracking
+
+### 📈 Analytics
+- Revenue overview
+- Business insights
+- Client growth
+- Project statistics
+
+### 👨‍💻 Client Portal
+- Secure client dashboard
+- Project updates
+- File sharing
+- Invoice access
+
+### ⚡ Automation
+- Workflow automation
+- Email reminders
+- Status updates
+- Client notifications
+
+### 🔗 Integrations
+- Google Calendar
+- Slack
+- Stripe
+- Zapier
+- GitHub
+- Discord
+
+### 💰 Pricing
+- Monthly & Yearly billing
+- Interactive pricing toggle
+- Modern pricing cards
+
+### ❓ FAQ
+- Accordion interface
+- Smooth interactions
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Lucide React
+- Class Variance Authority (CVA)
+- clsx
+- tailwind-merge
+
+---
+
+## 📂 Project Structure
+
+```
+src
+│
+├── app
+├── components
+│   ├── marketing
+│   ├── shared
+│   └── ui
+│
+├── data
+├── lib
+├── hooks
+├── styles
+└── types
+```
+
+---
+
+## 🎯 Current Progress
+
+- ✅ Landing Page
+- ✅ Responsive Desktop Layout
+- ✅ Hero Dashboard UI
+- ✅ Client CRM Section
+- ✅ Project Management Section
+- ✅ Invoicing Section
+- ✅ Analytics Section
+- ✅ Client Portal Section
+- ✅ Automation Section
+- ✅ Integrations Section
+- ✅ Pricing Section
+- ✅ FAQ
+- ✅ CTA
+- ✅ Footer
+
+---
+
+## 🚀 Roadmap
+
+### UI
+- [ ] Mobile Responsive Navigation
+- [ ] Dark Mode
+- [ ] Framer Motion Animations
+- [ ] Loading Skeletons
+
+### Backend
+- [ ] Supabase Authentication
+- [ ] PostgreSQL Database
+- [ ] Client CRUD
+- [ ] Project CRUD
+- [ ] Invoice CRUD
+- [ ] File Uploads
+- [ ] Dashboard Analytics
+- [ ] Notifications
+
+### Future Features
+- [ ] Team Management
+- [ ] Calendar
+- [ ] Time Tracking
+- [ ] Stripe Payments
+- [ ] Email Automation
+- [ ] AI Assistant
+
+---
+
+## 📦 Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/iamsyedbilal/clientflow.git
+```
+
+Move into the project.
+
+```bash
+cd clientflow
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions, ideas and suggestions are welcome.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to fork the repository and submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Author
+
+**Syed Bilal**
+
+- GitHub: https://github.com/iamsyedbilal
+
+---
+
+⭐ If you like this project, consider giving it a star!
