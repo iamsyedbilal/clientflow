@@ -1,32 +1,31 @@
 import FeatureList from "@/components/shared/FeatureList";
 import Section from "@/components/shared/Section";
 import SectionHeader from "@/components/shared/SectionHeader";
-import KanbanBoard from "./KanbanBoard";
+import WorkflowPreview from "./WorkflowPreview";
 import { marketingFeatures } from "@/data/marketing";
 
-export default function ProjectManagement() {
+export default function Automation() {
   return (
     <Section>
       <div className="grid items-center gap-20 lg:grid-cols-2">
-        {/* Left Content */}
         <div>
           <SectionHeader
-            badge="Project Management"
+            badge="Automation"
             title={
               <>
-                Keep every project
+                Let ClientFlow
                 <br />
-                moving forward.
+                handle the repetitive work.
               </>
             }
-            description="Plan, organize and deliver projects with an intuitive Kanban board."
+            description="Create simple workflows that automatically send emails, update
+            projects, notify your team, and keep clients informed."
           />
 
-          <FeatureList items={[...marketingFeatures.projectManagement]} />
+          <FeatureList items={[...marketingFeatures.automation]} />
         </div>
 
-        {/* Right */}
-        <KanbanBoard />
+        <WorkflowPreview />
       </div>
     </Section>
   );

@@ -1,32 +1,30 @@
 import FeatureList from "@/components/shared/FeatureList";
 import Section from "@/components/shared/Section";
 import SectionHeader from "@/components/shared/SectionHeader";
-import KanbanBoard from "./KanbanBoard";
+import IntegrationsPreview from "./IntegrationsPreview";
 import { marketingFeatures } from "@/data/marketing";
 
-export default function ProjectManagement() {
+export default function Integrations() {
   return (
     <Section>
       <div className="grid items-center gap-20 lg:grid-cols-2">
-        {/* Left Content */}
         <div>
           <SectionHeader
-            badge="Project Management"
+            badge="Integrations"
             title={
               <>
-                Keep every project
+                Connect your
                 <br />
-                moving forward.
+                favorite tools.
               </>
             }
-            description="Plan, organize and deliver projects with an intuitive Kanban board."
+            description="ClientFlow works seamlessly with the tools you already use, so your workflow stays connected without switching between dozens of apps."
           />
 
-          <FeatureList items={[...marketingFeatures.projectManagement]} />
+          <FeatureList items={[...marketingFeatures.integrations]} />
         </div>
 
-        {/* Right */}
-        <KanbanBoard />
+        <IntegrationsPreview />
       </div>
     </Section>
   );
