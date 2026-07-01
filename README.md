@@ -21,49 +21,70 @@ A modern SaaS platform for freelancers and agencies to manage clients, projects,
 ## ✨ Features
 
 ### 🧑‍💼 Client CRM
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Manage clients in one place
 - Client profiles & contact information
 - Search and filter clients
 - Linked projects and invoices
 
 ### 📋 Project Management
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Kanban board workflow
 - Task prioritization
 - Due dates
 - Project tracking
 
 ### 💳 Invoicing
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Professional invoice layout
 - Payment summaries
 - Invoice management
 - Payment status tracking
 
 ### 📈 Analytics
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Revenue overview
 - Business insights
 - Client growth
 - Project statistics
 
 ### 👨‍💻 Client Portal
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Secure client dashboard
 - Project updates
 - File sharing
 - Invoice access
 
 ### ⚡ Automation
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Workflow automation
 - Email reminders
 - Status updates
 - Client notifications
 
 ### 🔗 Integrations
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Google Calendar
 - Slack
 - Stripe
@@ -72,13 +93,19 @@ A modern SaaS platform for freelancers and agencies to manage clients, projects,
 - Discord
 
 ### 💰 Pricing
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Monthly & Yearly billing
 - Interactive pricing toggle
 - Modern pricing cards
 
 ### ❓ FAQ
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - Accordion interface
 - Smooth interactions
 
@@ -139,14 +166,20 @@ src
 ## 🚀 Roadmap
 
 ### UI
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - [ ] Mobile Responsive Navigation
 - [ ] Dark Mode
 - [ ] Framer Motion Animations
 - [ ] Loading Skeletons
 
 ### Backend
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - [ ] Supabase Authentication
 - [ ] PostgreSQL Database
 - [ ] Client CRUD
@@ -157,7 +190,10 @@ src
 - [ ] Notifications
 
 ### Future Features
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc85a8b120221feebfec53423602fb3af52a6f94
 - [ ] Team Management
 - [ ] Calendar
 - [ ] Time Tracking
