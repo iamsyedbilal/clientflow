@@ -1,21 +1,17 @@
-import { BadgeCheck, Bell, CreditCard, Mail, ArrowDown } from "lucide-react";
-import WorkflowNode from "./WorkflowNode";
+import PreviewCard from "@/components/shared/PreviewCard";
+import PreviewHeader from "@/components/shared/PreviewHeader";
+import { ArrowDown, BadgeCheck, Bell, CreditCard, Mail } from "lucide-react";
 import AutomationLog from "./AutomationLog";
+import WorkflowNode from "./WorkflowNode";
 
 export default function WorkflowPreview() {
   return (
-    <div className="rounded-3xl border border-border bg-background p-6 shadow-xl">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <p className="text-sm text-muted-foreground">Workflow</p>
-
-          <h3 className="mt-1 text-xl font-semibold">Payment Automation</h3>
-        </div>
-
-        <span className="rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
-          Active
-        </span>
-      </div>
+    <PreviewCard>
+      <PreviewHeader
+        eyebrow="Workflow"
+        title="Payment Automation"
+        badge="Active"
+      />
 
       <div className="flex flex-col items-center">
         <WorkflowNode
@@ -24,7 +20,7 @@ export default function WorkflowPreview() {
           description="Trigger"
         />
 
-        <ArrowDown className="my-2 h-5 w-5 text-muted-foreground" />
+        <ArrowDown className="my-2 h-4 w-4 text-muted-foreground sm:h-5 sm:w-5" />
 
         <WorkflowNode
           icon={Mail}
@@ -32,7 +28,7 @@ export default function WorkflowPreview() {
           description="Email"
         />
 
-        <ArrowDown className="my-2 h-5 w-5 text-muted-foreground" />
+        <ArrowDown className="my-2 h-4 w-4 text-muted-foreground sm:h-5 sm:w-5" />
 
         <WorkflowNode
           icon={BadgeCheck}
@@ -40,7 +36,7 @@ export default function WorkflowPreview() {
           description="Automation"
         />
 
-        <ArrowDown className="my-2 h-5 w-5 text-muted-foreground" />
+        <ArrowDown className="my-2 h-4 w-4 text-muted-foreground sm:h-5 sm:w-5" />
 
         <WorkflowNode
           icon={Bell}
@@ -50,6 +46,6 @@ export default function WorkflowPreview() {
       </div>
 
       <AutomationLog />
-    </div>
+    </PreviewCard>
   );
 }

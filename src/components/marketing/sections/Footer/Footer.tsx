@@ -31,15 +31,15 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border">
+    <footer className="border-t border-border px-2" id="footer">
       <Container>
-        <div className="grid gap-14 py-20 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
+        <div className="grid gap-10 py-14 sm:gap-12 sm:py-16 lg:grid-cols-[1.4fr_repeat(4,1fr)] lg:gap-14 lg:py-20">
           {/* Brand */}
 
-          <div>
+          <div className="max-w-sm">
             <Logo />
 
-            <p className="mt-5 max-w-sm leading-7 text-muted-foreground">
+            <p className="mt-4 text-sm leading-7 text-muted-foreground sm:text-base">
               ClientFlow helps freelancers and agencies manage clients,
               projects, invoices and communication from one beautiful workspace.
             </p>
@@ -65,7 +65,7 @@ export default function Footer() {
           </FooterColumn>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-border py-8 text-sm text-muted-foreground md:flex-row">
+        <div className="flex flex-col gap-2 border-t border-border py-6 text-center text-xs text-muted-foreground sm:gap-3 sm:py-8 sm:text-sm lg:flex-row lg:items-center lg:justify-between lg:text-left">
           <p>© {new Date().getFullYear()} ClientFlow. All rights reserved.</p>
 
           <p>Built with Next.js, Tailwind CSS & TypeScript.</p>

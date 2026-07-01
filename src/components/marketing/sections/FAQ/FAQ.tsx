@@ -7,7 +7,7 @@ import { marketingFeatures } from "@/data/marketing";
 
 export default function FAQ() {
   return (
-    <Section>
+    <Section id="faq" className="bg-gray-50">
       <div className="mx-auto max-w-4xl">
         <SectionHeader
           align="center"
@@ -16,7 +16,7 @@ export default function FAQ() {
           description="Everything you need to know before getting started."
         />
 
-        <div className="mt-14 space-y-4">
+        <div className="mt-10 space-y-3 lg:mt-14 lg:space-y-4">
           {marketingFeatures.faqs.map((faq) => (
             <FAQItem
               key={faq.question}

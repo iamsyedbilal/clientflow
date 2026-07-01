@@ -21,12 +21,12 @@ export default function FooterColumn({
       <h3 className="mb-5 font-semibold">{title}</h3>
 
       {links ? (
-        <div className="space-y-3">
+        <div className="space-y-2.5">
           {links.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="block text-muted-foreground transition-colors hover:text-foreground">
+              className="block text-sm text-muted-foreground transition-colors hover:text-foreground">
               {link.label}
             </Link>
           ))}

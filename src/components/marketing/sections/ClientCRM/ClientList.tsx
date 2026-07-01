@@ -1,4 +1,6 @@
 "use client";
+import PreviewCard from "@/components/shared/PreviewCard";
+import StatusBadge from "@/components/shared/StatusBadge";
 import { Search, MoreHorizontal } from "lucide-react";
 import { useState } from "react";
 
@@ -37,11 +39,11 @@ export default function ClientList() {
   });
 
   return (
-    <div className="rounded-3xl border border-border bg-background p-6 shadow-xl">
+    <PreviewCard>
       {/* Search */}
-      <div className="mb-6 flex items-center gap-3 rounded-xl border border-border px-4 py-3">
+      <div className="mb-5 flex items-center gap-3 rounded-xl border border-border px-3 py-3 sm:mb-6 sm:px-4">
+        {" "}
         <Search className="h-4 w-4 text-muted-foreground" />
-
         <input
           value={search}
           placeholder="Search clients..."
@@ -60,32 +62,32 @@ export default function ClientList() {
           filteredClients.map((client) => (
             <div
               key={client.name}
-              className="flex items-center justify-between rounded-2xl border border-border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+              className="flex flex-col gap-4 rounded-2xl border border-border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 font-semibold text-primary">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary sm:h-12 sm:w-12">
                   {client.name.charAt(0)}
                 </div>
 
                 <div>
-                  <h4 className="font-medium">{client.name}</h4>
+                  <h4 className="text-sm font-semibold sm:text-base">
+                    {client.name}
+                  </h4>
 
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground sm:text-sm">
+                    {" "}
                     {client.email}
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-                  {client.status}
-                </span>
-
+              <div className="flex items-center justify-between sm:justify-end gap-3">
+                <StatusBadge>{client.status}</StatusBadge>
                 <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
               </div>
             </div>
           ))
         )}
       </div>
-    </div>
+    </PreviewCard>
   );
 }

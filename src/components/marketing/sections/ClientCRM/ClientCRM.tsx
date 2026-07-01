@@ -1,33 +1,23 @@
-import Section from "@/components/shared/Section";
-import ClientList from "./ClientList";
-import FeatureList from "@/components/shared/FeatureList";
-import SectionHeader from "@/components/shared/SectionHeader";
+import FeatureSection from "@/components/shared/FeatureSection";
 import { marketingFeatures } from "@/data/marketing";
+import ClientList from "./ClientList";
 
 export default function ClientCRM() {
   return (
-    <Section>
-      <div className="grid items-center gap-20 lg:grid-cols-2">
-        {/* Left */}
-        <div>
-          <SectionHeader
-            badge="Client CRM"
-            title={
-              <>
-                Every client.
-                <br />
-                One organized workspace.
-              </>
-            }
-            description="Manage leads, active clients, notes, invoices and communication from a single dashboard."
-          />
-
-          <FeatureList items={[...marketingFeatures.clientCRM]} />
-        </div>
-
-        {/* Right */}
-        <ClientList />
-      </div>
-    </Section>
+    <FeatureSection
+      id="features"
+      badge="Client CRM"
+      title={
+        <>
+          Every client.
+          <br />
+          One organized workspace.
+        </>
+      }
+      description="Manage leads, active clients, notes, invoices and communication from a single dashboard."
+      features={marketingFeatures.clientCRM}
+      preview={<ClientList />}
+      // reverse={true}
+    />
   );
 }

@@ -6,10 +6,10 @@ interface FeatureItemProps {
 
 export default function FeatureItem({ children }: FeatureItemProps) {
   return (
-    <div className="flex items-center gap-3">
-      <Check className="h-5 w-5 text-primary" />
+    <div className="flex items-start gap-3">
+      <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
 
-      <span>{children}</span>
+      <span className="text-sm leading-6 sm:text-base">{children}</span>
     </div>
   );
 }

@@ -1,23 +1,24 @@
+import PreviewCard from "@/components/shared/PreviewCard";
 import IntegrationCard from "./IntegrationCard";
 
 import { Calendar, CreditCard, Workflow } from "lucide-react";
+import PreviewHeader from "@/components/shared/PreviewHeader";
 
 export default function IntegrationsPreview() {
   return (
-    <div className="space-y-5 p-6">
-      <div className="mb-2">
-        <p className="text-sm text-muted-foreground">Connected Apps</p>
+    <PreviewCard>
+      <PreviewHeader
+        eyebrow="Integrations"
+        title="Connect your favorite tools."
+      />
 
-        <h3 className="mt-1 text-xl font-semibold">4 Active Integrations</h3>
+      <div className="mt-5 space-y-4 sm:mt-6 sm:space-y-5">
+        <IntegrationCard icon={CreditCard} name="Stripe" />
+
+        <IntegrationCard icon={Calendar} name="Google Calendar" />
+
+        <IntegrationCard icon={Workflow} name="Zapier" />
       </div>
-
-      <IntegrationCard icon={CreditCard} name="Stripe" />
-
-      <IntegrationCard icon={Calendar} name="Google Calendar" />
-
-      {/* <IntegrationCard icon={Slack} name="Slack" /> */}
-
-      <IntegrationCard icon={Workflow} name="Zapier" />
-    </div>
+    </PreviewCard>
   );
 }

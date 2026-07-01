@@ -1,19 +1,16 @@
+import PreviewCard from "@/components/shared/PreviewCard";
+import PreviewHeader from "@/components/shared/PreviewHeader";
+
 export default function RevenueChart() {
   return (
-    <div className="rounded-2xl border border-border bg-surface-secondary p-6">
-      <div className="mb-6 flex items-center justify-between">
-        <div>
-          <h3 className="text-lg font-semibold">Revenue Overview</h3>
+    <PreviewCard>
+      <PreviewHeader
+        eyebrow="Revenue Overview"
+        title="Last 6 months"
+        badge="+18%"
+      />
 
-          <p className="text-sm text-muted-foreground">Last 6 months</p>
-        </div>
-
-        <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-          +18%
-        </span>
-      </div>
-
-      <div className="relative h-64">
+      <div className="relative h-48 sm:h-56 lg:h-64">
         <svg viewBox="0 0 600 220" className="h-full w-full" fill="none">
           <defs>
             <linearGradient id="analyticsGradient" x1="0" x2="0" y1="0" y2="1">
@@ -37,7 +34,7 @@ export default function RevenueChart() {
           />
         </svg>
 
-        <div className="mt-2 flex justify-between text-xs text-muted-foreground">
+        <div className="mt-2 flex justify-between text-[11px] text-muted-foreground sm:text-xs">
           <span>Jan</span>
           <span>Feb</span>
           <span>Mar</span>
@@ -46,6 +43,6 @@ export default function RevenueChart() {
           <span>Jun</span>
         </div>
       </div>
-    </div>
+    </PreviewCard>
   );
 }

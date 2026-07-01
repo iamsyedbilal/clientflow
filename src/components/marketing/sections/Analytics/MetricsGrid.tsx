@@ -1,3 +1,4 @@
+import StatusBadge from "@/components/shared/StatusBadge";
 import { DollarSign, Users, FolderKanban, TrendingUp } from "lucide-react";
 
 const metrics = [
@@ -37,9 +38,9 @@ export default function MetricsGrid() {
           <div
             key={metric.title}
             className="rounded-2xl border border-border bg-surface-secondary p-5">
-            <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10">
+            <StatusBadge>
               <Icon className="h-5 w-5 text-primary" />
-            </div>
+            </StatusBadge>
 
             <p className="text-sm text-muted-foreground">{metric.title}</p>
 

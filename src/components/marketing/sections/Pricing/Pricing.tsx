@@ -46,7 +46,7 @@ const plans = [
 export default function Pricing() {
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
   return (
-    <Section>
+    <Section id="pricing" className="bg-background">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           align="center"
@@ -57,7 +57,7 @@ export default function Pricing() {
 
         <PricingToggle billing={billing} setBilling={setBilling} />
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3 ">
+        <div className="mt-10 grid gap-6 lg:mt-16 lg:grid-cols-3 lg:gap-8">
           {plans.map((plan) => (
             <PricingCard key={plan.name} {...plan} billing={billing} />
           ))}

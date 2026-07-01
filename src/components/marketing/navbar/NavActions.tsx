@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 
 export default function NavActions() {
   return (
-    <div className="hidden items-center gap-4 lg:flex">
+    <div className="hidden items-center gap-4 lg:flex px-2">
       <Link
         href="/sign-in"
         className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground">

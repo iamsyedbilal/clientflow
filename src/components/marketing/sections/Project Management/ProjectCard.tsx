@@ -1,9 +1,12 @@
+import PreviewCard from "@/components/shared/PreviewCard";
+import StatusBadge from "@/components/shared/StatusBadge";
 import { CalendarDays, Flag } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   client: string;
   priority: "High" | "Medium" | "Low";
+  date: string;
 }
 
 const priorityColors = {
@@ -16,25 +19,28 @@ export default function ProjectCard({
   title,
   client,
   priority,
+  date,
 }: ProjectCardProps) {
   return (
-    <div className="cursor-pointer rounded-2xl border border-border bg-background p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <h4 className="font-medium">{title}</h4>
+    <PreviewCard>
+      <h4 className="text-sm font-medium sm:text-base">{title}</h4>
 
       <p className="mt-1 text-sm text-muted-foreground">{client}</p>
 
-      <div className="mt-5 flex items-center justify-between">
-        <span
-          className={`rounded-full px-2.5 py-1 text-xs font-medium ${priorityColors[priority]}`}>
-          <Flag className="mr-1 inline h-3 w-3" />
+      <div className="mt-4 flex items-center justify-center gap-2 sm:mt-5 sm:gap-3">
+        <StatusBadge className={priorityColors[priority]}>
+          <Flag className="inline h-3 w-3" />
           {priority}
-        </span>
+        </StatusBadge>
 
-        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+        <div className="flex items-center justify-between gap-1 text-xs text-muted-foreground">
           <CalendarDays className="h-3.5 w-3.5" />
-          Jul 30
+          {new Date(date).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+          })}
         </div>
       </div>
-    </div>
+    </PreviewCard>
   );
 }

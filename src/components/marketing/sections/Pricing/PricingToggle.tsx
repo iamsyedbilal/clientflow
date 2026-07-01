@@ -12,12 +12,12 @@ export default function PricingToggle({
   setBilling,
 }: PricingToggleProps) {
   return (
-    <div className="mt-12 flex justify-center">
-      <div className="flex items-center rounded-full border border-border bg-background p-1">
+    <div className="mt-12 flex justify-center p-2">
+      <div className="inline-flex w-full max-w-sm items-center rounded-full border border-border bg-background p-1">
         <button
           onClick={() => setBilling("monthly")}
           className={cn(
-            "cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-all",
+            "flex-1 cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-all",
             billing === "monthly"
               ? "bg-primary text-primary-foreground"
               : "text-muted-foreground",
@@ -28,7 +28,7 @@ export default function PricingToggle({
         <button
           onClick={() => setBilling("yearly")}
           className={cn(
-            "cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-all",
+            "flex-1 cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-all",
             billing === "yearly"
               ? "bg-primary text-primary-foreground"
               : "text-muted-foreground",
@@ -36,10 +36,12 @@ export default function PricingToggle({
           Yearly
           <span
             className={cn(
-              "ml-2 rounded-full bg-green-500/10 px-2 py-0.5 text-xs",
-              billing === "yearly" ? "text-white" : "text-green-600",
+              "ml-1 rounded-full px-1.5 py-0.5 text-[10px] font-semibold",
+              billing === "yearly"
+                ? "bg-primary-foreground/20 text-primary-foreground"
+                : "bg-green-500/10 text-green-600",
             )}>
-            Save 20%
+            -20%
           </span>
         </button>
       </div>

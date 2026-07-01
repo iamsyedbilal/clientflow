@@ -1,33 +1,21 @@
-import FeatureList from "@/components/shared/FeatureList";
-import Section from "@/components/shared/Section";
-import SectionHeader from "@/components/shared/SectionHeader";
-import KanbanBoard from "./KanbanBoard";
+import FeatureSection from "@/components/shared/FeatureSection";
 import { marketingFeatures } from "@/data/marketing";
+import KanbanBoard from "./KanbanBoard";
 
 export default function ProjectManagement() {
   return (
-    <Section>
-      <div className="grid items-center gap-20 lg:grid-cols-2">
-        {/* Left Content */}
-        <div>
-          <SectionHeader
-            badge="Project Management"
-            title={
-              <>
-                Keep every project
-                <br />
-                moving forward.
-              </>
-            }
-            description="Plan, organize and deliver projects with an intuitive Kanban board."
-          />
-
-          <FeatureList items={[...marketingFeatures.projectManagement]} />
-        </div>
-
-        {/* Right */}
-        <KanbanBoard />
-      </div>
-    </Section>
+    <FeatureSection
+      badge="Project Management"
+      title={
+        <>
+          Keep every project
+          <br />
+          moving forward.
+        </>
+      }
+      description="Plan, organize and deliver projects with an intuitive Kanban board."
+      features={marketingFeatures.projectManagement}
+      preview={<KanbanBoard />}
+    />
   );
 }

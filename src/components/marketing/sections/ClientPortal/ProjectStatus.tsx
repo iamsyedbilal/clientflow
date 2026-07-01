@@ -11,13 +11,12 @@ const projects = [
 
 export default function ProjectStatus() {
   return (
-    <div className="space-y-5 rounded-2xl border border-border p-5">
-      <h4 className="font-semibold">Active Projects</h4>
-
+    <div className="space-y-5 rounded-2xl border border-border p-4 sm:p-5">
+      <h4 className="text-sm font-semibold sm:text-base">Active Projects</h4>
       {projects.map((project) => (
         <div key={project.name}>
           <div className="mb-2 flex justify-between">
-            <span>{project.name}</span>
+            <span className="text-sm sm:text-base">{project.name}</span>
 
             <span className="text-sm text-muted-foreground">
               {project.progress}%
