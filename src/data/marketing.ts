@@ -43,7 +43,33 @@ export const marketingFeatures = {
   integrations: [
     "Stripe payments",
     "Google Calendar sync",
-    "Slack notifications",
     "Zapier automation",
+  ],
+  faqs: [
+    {
+      question: "Can I try ClientFlow for free?",
+      answer:
+        "Yes. Every plan includes a 14-day free trial with full access. No credit card is required.",
+    },
+    {
+      question: "Can I cancel my subscription anytime?",
+      answer:
+        "Absolutely. You can upgrade, downgrade, or cancel your subscription whenever you want.",
+    },
+    {
+      question: "Does ClientFlow support team collaboration?",
+      answer:
+        "Yes. Invite teammates, assign permissions, and collaborate on projects in real time.",
+    },
+    {
+      question: "Can my clients access their own portal?",
+      answer:
+        "Yes. Every client gets a secure portal where they can view projects, invoices, files, and updates.",
+    },
+    {
+      question: "Which payment providers do you support?",
+      answer:
+        "ClientFlow integrates with Stripe and other payment providers to help you accept payments securely.",
+    },
   ],
 } as const;

@@ -1,23 +1,5 @@
 import Link from "next/link";
-
-const navLinks = [
-  {
-    label: "Features",
-    href: "#features",
-  },
-  {
-    label: "Pricing",
-    href: "#pricing",
-  },
-  {
-    label: "Resources",
-    href: "#resources",
-  },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
-];
+import { navLinks } from "@/data/navLinks";
 
 export default function NavLinks() {
   return (

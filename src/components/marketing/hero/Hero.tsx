@@ -1,14 +1,15 @@
+import Section from "@/components/shared/Section";
 import Container from "../../ui/Container";
 import HeroContent from "./HeroContent";
 import HeroDashboard from "./HeroDashboard";
 
 export default function Hero() {
   return (
-    <section>
+    <Section>
       <Container>
         <HeroContent />
         <HeroDashboard />
       </Container>
-    </section>
+    </Section>
   );
 }

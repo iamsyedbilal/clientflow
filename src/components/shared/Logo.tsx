@@ -17,7 +17,7 @@ const sizes = {
 
 export default function Logo({
   href = "/",
-  showText = true,
+  showText = false,
   size = "lg",
   className,
 }: LogoProps) {

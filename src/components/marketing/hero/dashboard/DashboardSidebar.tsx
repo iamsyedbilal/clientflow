@@ -60,10 +60,10 @@ const navigation = [
 
 export default function DashboardSidebar() {
   return (
-    <aside className="flex h-full flex-col border-r border-border bg-background">
+    <aside className="hidden lg:flex h-full flex-col border-r border-border bg-background">
       {/* Logo */}
       <div className="border-border px-6 py-2">
-        <Logo size="lg" showText={false} />
+        <Logo size="lg" />
       </div>
 
       {/* Navigation */}
