@@ -3,7 +3,7 @@ import HeroButtons from "./HeroButtons";
 
 export default function HeroContent() {
   return (
-    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center py-8 text-center sm:py-12 lg:py-14">
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center py-8 text-center ">
       {/* Badge */}
       <div className="mb-4 inline-flex items-center rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-xs font-medium text-primary sm:px-4 sm:text-sm">
         AI-powered platform for service businesses
