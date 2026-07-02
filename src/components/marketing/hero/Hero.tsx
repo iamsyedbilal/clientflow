@@ -3,6 +3,7 @@ import Container from "../../ui/Container";
 import HeroContent from "./HeroContent";
 import HeroDashboard from "./HeroDashboard";
 import HeroReveal from "@/components/shared/HeroReveal";
+import ScrollReveal from "@/components/shared/DashboardReveal";
 
 export default function Hero() {
   return (
@@ -10,8 +11,10 @@ export default function Hero() {
       <Container>
         <HeroReveal>
           <HeroContent />
-          <HeroDashboard />
         </HeroReveal>
+        <ScrollReveal>
+          <HeroDashboard />
+        </ScrollReveal>
       </Container>
     </Section>
   );
