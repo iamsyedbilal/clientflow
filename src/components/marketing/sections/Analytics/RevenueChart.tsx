@@ -34,7 +34,7 @@ export default function RevenueChart() {
           />
         </svg>
 
-        <div className="mt-2 flex justify-between text-[11px] text-muted-foreground sm:text-xs">
+        <div className="mt-0 flex justify-between text-[11px] text-muted-foreground sm:text-xs">
           <span>Jan</span>
           <span>Feb</span>
           <span>Mar</span>
